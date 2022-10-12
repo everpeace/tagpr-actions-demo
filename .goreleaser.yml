@@ -2,8 +2,8 @@ before:
   hooks:
   - go mod download
 builds:
-- id: test-tagpr-actions
-  binary: test-tagpr-actions
+- id: tagpr-actions-demo
+  binary: tagpr-actions-demo
   env:
   - CGO_ENABLED=0
   goos:

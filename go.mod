@@ -1,3 +1,3 @@
-module github.com/everpeace/test-tagpr-actions
+module github.com/everpeace/tagpr-actions-demo
 
 go 1.19
