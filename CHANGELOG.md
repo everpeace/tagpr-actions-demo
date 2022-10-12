@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.0.4](https://github.com/everpeace/test-tagpr-actions/compare/v0.0.3...v0.0.4) - 2022-10-12
+### 🧰 Maintenance
+- must pass token when invoking release action by @everpeace in https://github.com/everpeace/test-tagpr-actions/pull/8
+
 ## [v0.0.3](https://github.com/everpeace/test-tagpr-actions/compare/v0.0.2...v0.0.3) - 2022-10-12
 ### 🧰 Maintenance
 - set shell in 'go mod download' step in release action by @everpeace in https://github.com/everpeace/test-tagpr-actions/pull/6
