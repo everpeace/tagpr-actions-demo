@@ -1,3 +1,6 @@
+#
+# tagpr main workflow
+#
 name: tagpr
 on:
   push:
@@ -13,9 +16,14 @@ jobs:
       uses: Songmu/tagpr@main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    # If tagpr pushed tags, invoke release action manually
-    # because, any event will be triggered in the workflow with repotitory GITHUB_TOKEN.
-    # ref: https://docs.github.com/en/actions/security-guides/automatic-token-authentication#using-the-github_token-in-a-workflow
+
+      # If tagpr pushed tags, invoke release custom action manually.
+      # It is because:
+      # > When you use the repository's GITHUB_TOKEN to perform tasks, 
+      # > events triggered by the GITHUB_TOKEN, with the exception of 
+      # > workflow_dispatch and repository_dispatch, will not create 
+      # > a new workflow run.
+      # ref: https://docs.github.com/en/actions/security-guides/automatic-token-authentication#using-the-github_token-in-a-workflow
     - name: "Release (only when tagged)"
       uses: ./.github/actions/release
       if: "steps.tagpr.outputs.tag != ''"
