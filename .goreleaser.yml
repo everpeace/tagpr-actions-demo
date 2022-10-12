@@ -1,0 +1,14 @@
+before:
+  hooks:
+  - go mod download
+builds:
+- id: test-tagpr-actions
+  binary: test-tagpr-actions
+  env:
+  - CGO_ENABLED=0
+  goos:
+  - darwin
+  goarch:
+  - arm64
+  ldflags:
+  - -s -w

@@ -1,0 +1,23 @@
+name: tagpr
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  tagpr:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - id: tagpr
+      name: Tagpr
+      uses: Songmu/tagpr@main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # If tagpr pushed tags, invoke release action manually
+    # because, any event will be triggered in the workflow with repotitory GITHUB_TOKEN.
+    # ref: https://docs.github.com/en/actions/security-guides/automatic-token-authentication#using-the-github_token-in-a-workflow
+    - name: Release
+      uses: ./.github/actions/release
+      with:
+        tag: ${{ steps.tagpr.outputs.tag }}
+      if: "steps.tagpr.outputs.tag != ''"
