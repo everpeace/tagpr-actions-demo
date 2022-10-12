@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.0.5](https://github.com/everpeace/tagpr-actions-demo/compare/v0.0.4...v0.0.5) - 2022-10-12
+### 💣 Breaking Changes
+- rename name by @everpeace in https://github.com/everpeace/tagpr-actions-demo/pull/10
+### 📜 Documentation
+- Pave readme and workflow comments by @everpeace in https://github.com/everpeace/tagpr-actions-demo/pull/12
+
 ## [v0.0.4](https://github.com/everpeace/test-tagpr-actions/compare/v0.0.3...v0.0.4) - 2022-10-12
 ### 🧰 Maintenance
 - must pass token when invoking release action by @everpeace in https://github.com/everpeace/test-tagpr-actions/pull/8
