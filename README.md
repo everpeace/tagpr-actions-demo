@@ -1,1 +1,1 @@
-# test-tagpr-actions
+# tagpr-actions-demo
