@@ -1,5 +1,10 @@
 # Changelog
 
+## [v0.2.0](https://github.com/everpeace/tagpr-actions-demo/compare/v0.1.1...v0.2.0) - 2022-10-12
+### 🚀 Features
+- sample change by @everpeace in https://github.com/everpeace/tagpr-actions-demo/pull/13
+- sample change by @everpeace in https://github.com/everpeace/tagpr-actions-demo/pull/15
+
 ## [v0.0.5](https://github.com/everpeace/tagpr-actions-demo/compare/v0.0.4...v0.0.5) - 2022-10-12
 ### 💣 Breaking Changes
 - rename name by @everpeace in https://github.com/everpeace/tagpr-actions-demo/pull/10
