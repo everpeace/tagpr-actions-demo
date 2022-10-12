@@ -1,3 +1,7 @@
+#
+# This workflow runs when tagged manually.
+# It would be useful when tagpr workflow failed in some reason.
+#
 name: Release By Tagged Manually
 
 on:

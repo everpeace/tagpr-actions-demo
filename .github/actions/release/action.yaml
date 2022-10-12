@@ -1,3 +1,7 @@
+#
+# This is a custom action called from workflows
+# which actually executes release procedure
+#
 name: release
 description: release executables
 
